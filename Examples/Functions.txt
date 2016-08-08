@@ -1,0 +1,38 @@
+What you may receive:
+
+string temp = weather.weatherinfo.Temperature; 
+
+        string CityName = City name
+        string CityLon  = City geo location, longitude
+        string CityLat  =  City geo location, latitude
+        string CityID   =  City ID
+        string CountryCode = Country code (GB, JP, SK etc.)
+        string Temperature = Temperature
+        string TemperatureMin = Minimum temperature at the moment of calculation.(use these parameter optionally).
+        string TemperatureMax = Maximum temperature at the moment of calculation.(use these parameter optionally).
+        string Humidity = Humidity value
+        string HumidityUnit = Humidity unit (%)
+        string Pressure = Pressure value
+        string PressureUnit = Pressure unit (hPa)
+        string WindSpeed = Wind speed, mps
+        string WindName = Type of the wind
+        string WindDirection =  Wind direction, degrees (meteorological)
+        string WindDirectionCode = Code of the wind direction. Possilbe value is WSW, N, S etc.
+        string WindDirectionName = Full name of the wind direction.
+        string Weather = Weather condition name
+        string WeatherNumber = Weather condition id
+
+
+http://openweathermap.org/current
+
+
+GetWeather(string CityName) = loads weather by city name
+GetWeather(float Latitude, float Longtitude) = loads weather by geographic coordinates.
+GetWeather(int CityID)  = loads weather by city ID
+
+GetCountry() = return current pc Country English name
+You may use: weather.GetWeather(weather.GetCountry()) = return capital city weather of your country
+
+GetWeatherIsSuccessful() = return true if is successful
+
+SetLanguage(string CountryCode,bool SetCustomLanguage) = Set language
