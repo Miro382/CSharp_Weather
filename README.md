@@ -15,3 +15,14 @@ using CSharp_Weather;
                     string temp = weather.weatherinfo.Temperature + weather.UnitSymbol();
                 }
             }
+
+
+Open Weather Map is free for commercial use.
+
+
+If you want weather of your country capital city use
+
+     if(weather.GetWeather(weather.GetCountry()))
+     {
+          ...  
+     }
