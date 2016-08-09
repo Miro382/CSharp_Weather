@@ -15,7 +15,7 @@ using System.Xml;
  */
 
 
-namespace My_Spy
+namespace CSharp_Weather
 {
 
     public class WeatherInfo
