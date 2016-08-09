@@ -26,3 +26,5 @@ If you want weather of your country capital city use
      {
           ...  
      }
+
+Current version: 1.0.0
