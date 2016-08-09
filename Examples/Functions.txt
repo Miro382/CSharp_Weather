@@ -21,6 +21,9 @@ string temp = weather.weatherinfo.Temperature;
         string WindDirectionName = Full name of the wind direction.
         string Weather = Weather condition name
         string WeatherNumber = Weather condition id
+        string LastUpdate = Last time when data was updated
+        string Cloudsname = Name of the cloudiness
+        string Cloudsvalue =  Cloudiness
 
 
 http://openweathermap.org/current
