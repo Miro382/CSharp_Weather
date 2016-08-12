@@ -1,0 +1,5 @@
+City locator
+http://wiki.openstreetmap.org/wiki/Nominatim
+
+Nominatim is under licence:
+Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright
