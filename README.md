@@ -1,10 +1,10 @@
 # CSharp_Weather
 C# weather api
 
-Very easy code for retrieve weather from http://openweathermap.org/
-With few lines of code you can get temperature, wind, humidity, pressure...
+Very easy code for retrieve weather from http://openweathermap.org/ or from http://met.no/
+with few lines of code you can get temperature, wind, humidity, pressure...
 
-
+<h4>Open Weather Map</h4>
 using CSharp_Weather;
 
             Weather weather = new Weather("123456789101112131415", Weather.Celsius);
@@ -28,5 +28,24 @@ If you want weather of your country capital city use
      }
 
 
+<h4>The Norwegian Meteorological Institute</h4>
+
+using CSharp_Weather;
+
+            CityLocator cityloc = new CityLocator();
+            cityloc.GetGeoCoordByCityName("Bratislava");
+
+            WeatherMET weather = new WeatherMET();
+            if(weather.GetWeatherData(cityloc.Latitude,cityloc.Longtitude))
+            {
+                string temp = weather.weatherinfo.Temperature;
+            }
+ 
+ 
+ <br>
+ MET Norway is free for commercial use if you attribute them: http://api.met.no/license_data.html           
+ 
+ <br>
+ CityLocator is for receive latitude and longtitude from city name.           
 
 Current version: 1.0.0
