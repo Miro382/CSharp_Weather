@@ -5,6 +5,8 @@ Very easy code for receive weather from http://openweathermap.org/ or from http:
 with few lines of code you can get temperature, wind speed, humidity, pressure...
 
 <h4>Open Weather Map</h4>
+Wiki: https://github.com/Miro382/CSharp_Weather/wiki/Open-Weather-Map
+
 using CSharp_Weather;
 
             Weather weather = new Weather("123456789101112131415", Weather.Celsius);
@@ -29,6 +31,7 @@ If you want weather of your country capital city use
 
 
 <h4>The Norwegian Meteorological Institute</h4>
+Wiki: https://github.com/Miro382/CSharp_Weather/wiki/The-Norwegian-Meteorological-Institute
 
 using CSharp_Weather;
 
