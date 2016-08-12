@@ -1,7 +1,7 @@
 # CSharp_Weather
 C# weather api
 
-Very easy code for retrieve weather from http://openweathermap.org/ or from http://met.no/
+Very easy code for receive weather from http://openweathermap.org/ or from http://met.no/
 with few lines of code you can get temperature, wind, humidity, pressure...
 
 <h4>Open Weather Map</h4>
