@@ -1,4 +1,4 @@
-**** ONLY WHEN YOU USING CITY LOCATOR ****
+<h3>**** ONLY WHEN YOU USING CITY LOCATOR ****</h3>
 <br>
 City locator is using Nominatim.
 
