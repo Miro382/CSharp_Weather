@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CSharp_Weather")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("CSharp Weather")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("CSharp_Weather")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright ©  2016 Miroslav Murin")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
