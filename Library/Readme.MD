@@ -1,4 +1,5 @@
 **** ONLY WHEN YOU USING CITY LOCATOR ****
+<br>
 City locator is using Nominatim.
 
 http://wiki.openstreetmap.org/wiki/Nominatim
