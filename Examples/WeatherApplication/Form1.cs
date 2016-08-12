@@ -15,7 +15,7 @@ namespace WeatherApplication
         private void Form1_Load(object sender, EventArgs e)
         {
             /*
-            Weather weather = new Weather("79f4bd16a8425b5ba8153d93e67a7c21", Weather.Fahrenheit);
+            Weather weather = new Weather("1234567891011121314151617", Weather.Fahrenheit);
             weather.SetLanguage("en",true);
             if(weather.GetWeather(weather.GetCountry()))
             {
