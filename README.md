@@ -2,7 +2,7 @@
 C# weather api
 
 Very easy code for receive weather from http://openweathermap.org/ or from http://met.no/
-with few lines of code you can get temperature, wind, humidity, pressure...
+with few lines of code you can get temperature, wind speed, humidity, pressure...
 
 <h4>Open Weather Map</h4>
 using CSharp_Weather;
@@ -46,6 +46,8 @@ using CSharp_Weather;
  MET Norway is free for commercial use if you attribute them: http://api.met.no/license_data.html           
  
  <br>
- CityLocator is for receive latitude and longtitude from city name.           
+ CityLocator is for receive latitude and longtitude from city name.      
+ 
+<b>This version only work for current weather. No forecast.<b>
 
 Current version: 1.0.0
