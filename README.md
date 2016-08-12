@@ -48,6 +48,6 @@ using CSharp_Weather;
  <br>
  CityLocator is for receive latitude and longtitude from city name.      
  
-<b>This version only work for current weather. No forecast.<b>
+<b>This version only work for current weather. No forecast.</b>
 
 Current version: 1.0.0
