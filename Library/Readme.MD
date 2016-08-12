@@ -10,3 +10,7 @@ Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyr
 You can use it for commercial use. But you need add attribution to open street map.
 <br>
 http://www.openstreetmap.org/copyright
+
+<h3>Weather Met</h3>
+If you are using WeatherMet you must add attribution to The Norwegian Meteorological Institute
+<br>Read more: http://api.met.no/license_data.html
