@@ -18,17 +18,6 @@ using System.Xml;
 namespace CSharp_Weather
 {
 
-    public class WeatherInfo
-    {
-        public string CityName = "", CityLon = "", CityLat = "", CityID = "", CountryCode = "";
-        public string Temperature = "", TemperatureMin = "", TemperatureMax = "";
-        public string Humidity = "", HumidityUnit = "", Pressure = "", PressureUnit = "";
-        public string WindSpeed = "", WindName = "", WindDirection = "", WindDirectionCode = "", WindDirectionName = "";
-        public string Weather = "", WeatherNumber = "";
-        public string LastUpdate = "", Cloudsname = "", Cloudsvalue = "";
-    }
-
-
     public class Weather
     {
         public const string Kelvin = "", Celsius = "&units=metric", Fahrenheit = "&units=imperial";
@@ -86,20 +75,6 @@ namespace CSharp_Weather
 
 
 
-        private string GETHtml(string Url)
-        {
-            HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(Url);
-            myRequest.Method = "GET";
-            WebResponse myResponse = myRequest.GetResponse();
-            StreamReader sr = new StreamReader(myResponse.GetResponseStream(), Encoding.UTF8);
-            string result = sr.ReadToEnd();
-            sr.Close();
-            myResponse.Close();
-
-            return result;
-        }
-
-
 
 
         ///<summary>
@@ -122,7 +97,7 @@ namespace CSharp_Weather
             try
             {
                 getweather = false;
-                string weather = GETHtml("http://api.openweathermap.org/data/2.5/weather?q=" + CityName + "&APPID=" + APPID + Format + lang + "&mode=xml");
+                string weather = HelpClass.GETHtml("http://api.openweathermap.org/data/2.5/weather?q=" + CityName + "&APPID=" + APPID + Format + lang + "&mode=xml");
                 ParseXML(weather);
 
                 return true;
@@ -145,7 +120,7 @@ namespace CSharp_Weather
             try
             {
                 getweather = false;
-                string weather = GETHtml("http://api.openweathermap.org/data/2.5/weather?lat=" + Latitude + "&lon=" + Longtitude + "&APPID=" + APPID + Format + lang + "&mode=xml");
+                string weather = HelpClass.GETHtml("http://api.openweathermap.org/data/2.5/weather?lat=" + Latitude + "&lon=" + Longtitude + "&APPID=" + APPID + Format + lang + "&mode=xml");
                 ParseXML(weather);
 
                 return true;
@@ -168,7 +143,7 @@ namespace CSharp_Weather
             try
             {
                 getweather = false;
-                string weather = GETHtml("http://api.openweathermap.org/data/2.5/weather?id=" + CityID + "&APPID=" + APPID + Format + lang + "&mode=xml");
+                string weather = HelpClass.GETHtml("http://api.openweathermap.org/data/2.5/weather?id=" + CityID + "&APPID=" + APPID + Format + lang + "&mode=xml");
                 ParseXML(weather);
 
                 return true;
