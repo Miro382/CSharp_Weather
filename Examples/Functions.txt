@@ -6,6 +6,7 @@ string temp = weather.weatherinfo.Temperature;
         string CityLon  = City geo location, longitude
         string CityLat  =  City geo location, latitude
         string CityID   =  City ID
+        string CountryCode = Country code
         string CountryCode = Country code (GB, JP, SK etc.)
         string Temperature = Temperature
         string TemperatureMin = Minimum temperature at the moment of calculation.(use these parameter optionally).
@@ -24,11 +25,12 @@ string temp = weather.weatherinfo.Temperature;
         string LastUpdate = Last time when data was updated
         string Cloudsname = Name of the cloudiness
         string Cloudsvalue =  Cloudiness
-
+        string Fog = Fog
+        string Precipitation = Precipitation
 
 http://openweathermap.org/current
 
-
+//In Weather
 GetWeather(string CityName) = loads weather by city name
 GetWeather(float Latitude, float Longtitude) = loads weather by geographic coordinates.
 GetWeather(int CityID)  = loads weather by city ID
@@ -39,3 +41,10 @@ You may use: weather.GetWeather(weather.GetCountry()) = return capital city weat
 GetWeatherIsSuccessful() = return true if is successful
 
 SetLanguage(string CountryCode,bool SetCustomLanguage) = Set language
+
+
+//In WeatherMET
+Bitmap GetIcon(int night) = Get current weather icon
+bool GetWeatherData(string latitude, string longtitude) = Read weather data from The Norwegian Meteorological Institute
+bool GetWeatherData(float latitude, float longtitude) = Read weather data from The Norwegian Meteorological Institute
+string GetTemperatureInUnits(int Unit) = Returns temperature in specific units
