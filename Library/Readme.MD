@@ -1,4 +1,5 @@
-City locator
+City locator is using Nominatim.
+
 http://wiki.openstreetmap.org/wiki/Nominatim
 
 Nominatim is under licence:
