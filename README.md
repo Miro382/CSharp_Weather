@@ -50,4 +50,4 @@ using CSharp_Weather;
  
 <b>This version only work for current weather. No forecast.</b>
 
-Current version: 1.0.0
+<i>Current version: 1.0.0</i>
